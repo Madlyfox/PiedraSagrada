@@ -1,0 +1,89 @@
+.carousel {
+  --color-primary: #007bff;
+  --color-secondary: #868e96;
+  margin-bottom: 30px;
+}
+
+.slidesContainer {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  height: 250px;
+  width: 100%;
+}
+
+.slide {
+  flex-shrink: 0;
+  width: calc(250px - 10px); /* Account for spacing when setting width */
+  /* Other styles remain the same */
+}
+
+.slideLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.slide:hover .slideLink {
+  opacity: 0.7;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.arrows {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.arrowPrev,
+.arrowNext {
+  position: absolute; /* Position arrows based on your preference */
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.arrowPrev:hover,
+.arrowNext:hover {
+  background-color: rgba(var(--color-primary), 0.2);
+}
+
+.arrowPrev {
+  left: 0;
+}
+.arrowNext {
+  right: 0;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.dotActive {
+  background-color: var(--color-primary);
+}

@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap");
+
+.main {
+  display: flex;
+  position: relative;
+
+  height: 100vh;
+}
+.render {
+  width: 100%;
+  background-color: lightgray;
+  height: 100%;
+  display: flex;
+}
+.content {
+  width: 100%;
+
+  display: flex;
+  flex-flow: column;
+  gap: 50px;
+}
+.render > img {
+  scale: 0.5;
+}
+.text {
+  display: flex;
+  flex-flow: column;
+}
+.title {
+  width: 525px;
+}
+.capitalized {
+  font-family: "Arapey", serif;
+  font-size: 54px;
+  margin: 0;
+  padding: 0 5px 0 0;
+}
+
+.paragraph {
+  width: 550px;
+  display: flex;
+  align-items: center;
+}
+.paragraph > p {
+  margin: 0;
+}
+.carousel {
+  width: 100%;
+  height: 250px;
+}
