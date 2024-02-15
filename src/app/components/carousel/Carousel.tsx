@@ -32,16 +32,6 @@ const Carousel = ({ items, showArrows = true, showDots = true }) => {
     }
   };
 
-  const handleDotClick = (index) => {
-    setCurrentSlide(index);
-
-    // Scroll to the clicked dot's slide smoothly
-    if (slidesContainerRef.current) {
-      slidesContainerRef.current.scrollLeft =
-        slidesContainerRef.current.clientWidth * index;
-    }
-  };
-
   const renderSlide = (item, index) => (
     <div key={index} className={styles.slide} style={{ width: slideWidth }}>
       <Image
@@ -53,9 +43,6 @@ const Carousel = ({ items, showArrows = true, showDots = true }) => {
         quality={100}
         priority
       />
-      <a href={item.href} className={styles.slideLink}>
-        {/* Add button or text content inside the link based on your design */}
-      </a>
     </div>
   );
 
@@ -73,20 +60,6 @@ const Carousel = ({ items, showArrows = true, showDots = true }) => {
           <button onClick={handleNextClick} className={styles.arrowNext}>
             →
           </button>
-        </div>
-      )}
-
-      {showDots && (
-        <div className={styles.dots}>
-          {items.map((item, index) => (
-            <button
-              key={index}
-              onClick={() => handleDotClick(index)}
-              className={`${styles.dot} ${
-                currentSlide === index ? styles.dotActive : ""
-              }`}
-            />
-          ))}
         </div>
       )}
     </div>
