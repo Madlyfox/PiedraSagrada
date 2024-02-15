@@ -1,4 +1,6 @@
 .carousel {
+  position: relative;
+  width: 1000px;
   --color-primary: #007bff;
   --color-secondary: #868e96;
   margin-bottom: 30px;
@@ -6,7 +8,8 @@
 
 .slidesContainer {
   display: flex;
-  overflow-x: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   height: 250px;
   width: 100%;
@@ -45,7 +48,7 @@
 
 .arrowPrev,
 .arrowNext {
-  position: absolute; /* Position arrows based on your preference */
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   border: none;

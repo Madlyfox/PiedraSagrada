@@ -37,7 +37,7 @@ const Carousel = ({ items, showArrows = true, showDots = true }) => {
       <Image
         src={item.imageLink}
         alt={item.altText}
-        width={250}
+        width={400}
         height={250}
         objectFit="cover"
         quality={100}
