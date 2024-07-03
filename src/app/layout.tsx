@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Roboto } from "next/font/google";
 import "./styles/global.css";
+import Nav from "./components/layout/navigation/Nav";
 
 const inter = Inter({ subsets: ["latin"] });
 // const roboto = Roboto({ weight: ["500", "700"] });
@@ -19,6 +20,7 @@ export default function RootLayout({
     <html lang="en">
       {/* <body className={`${inter.className} ${roboto.className}`}>
        */}
+      <Nav />
       <body className={`${inter.className} `}>{children}</body>
     </html>
   );
