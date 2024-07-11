@@ -6,6 +6,9 @@ body {
   padding: 0;
 }
 
+a {
+  color: black;
+}
 h1 {
   font-family: "Roboto", sans-serif;
   font-size: 44px;
