@@ -1,0 +1,108 @@
+.button {
+  padding: 10px 10px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  width: 150px;
+  border-radius: var(--radius-8);
+  background-color: var(--primary-400);
+  color: var(--white);
+  transition: background 230ms ease-in-out, box-shadow 230ms ease-in-out,
+    color 230ms ease;
+}
+
+.large {
+  width: 200px;
+}
+
+.button.secondary {
+  background-color: var(--primary-300);
+  color: var(--white);
+}
+
+.button.tertiary {
+  background-color: var(--primary-200);
+  color: var(--white);
+}
+
+.button:hover {
+  background-color: var(--primary-900);
+  color: var(--primary-100);
+}
+
+.button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.button span {
+  display: inline-block;
+}
+
+.button span i {
+  display: block;
+  font-size: 22px;
+}
+
+.icon__only {
+  padding: 10px;
+}
+
+.icon__only > span {
+  margin: 0;
+}
+
+.text {
+  display: block;
+  width: 100%;
+}
+
+.icon {
+  pointer-events: none;
+}
+
+.icon__only > svg {
+  scale: 0.8;
+}
+
+.white {
+  padding: 10px 10px;
+
+  background-color: var(--white);
+  color: var(--content);
+}
+.white > svg {
+  stroke: var(--content);
+}
+
+.blue {
+  background-color: var(--primary-500);
+  color: var(--white);
+}
+
+.red {
+  background-color: var(--secondary-red-400);
+  color: var(--white);
+}
+
+.green {
+  background-color: var(--secondary-green-600);
+  color: var(--white);
+}
+.blueClear {
+  background-color: var(--primary-900);
+  color: var(--primary-500);
+}
+.blueClear > svg {
+  stroke: var(--primary-500);
+}
+
+.redClear {
+  background-color: var(--secondary-red-900);
+  color: var(--secondary-red-500);
+}
+
+.greenClear {
+  background-color: var(--secondary-green-900);
+  color: var(--secondary-green-600);
+}

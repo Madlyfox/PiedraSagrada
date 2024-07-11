@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@material/web": "^1.5.1",
     "lucide-react": "^0.331.0",
+    "material-icons": "^1.13.12",
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18"

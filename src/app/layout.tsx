@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Roboto } from "next/font/google";
+import "./styles/variables.css";
+
 import "./styles/global.css";
 import Nav from "./components/layout/navigation/Nav";
 
@@ -20,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       {/* <body className={`${inter.className} ${roboto.className}`}>
        */}
-      <Nav />
+      {/* <Nav /> */}
       <body className={`${inter.className} `}>{children}</body>
     </html>
   );
