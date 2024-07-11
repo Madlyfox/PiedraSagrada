@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Roboto:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   margin: 0;
@@ -7,13 +12,192 @@ body {
 }
 
 a {
-  color: black;
+  text-decoration: none;
 }
-h1 {
+
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea,
+select,
+input {
+  width: 100%;
+  padding: 14px 10px;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  border-radius: var(--radius-8);
+}
+
+main.ad {
+  margin-left: var(--ad-main-margin-left);
+  padding-inline: 0;
+  padding-top: 0;
+}
+
+main.pl {
+  padding-inline: 140px;
+  padding-top: 120px;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap-base);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--container-column-count), 1fr);
+  gap: var(--gap-base);
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-flow: row;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.logo {
+  overflow: hidden;
+  width: 80px;
+}
+
+.logo > img {
+  width: 100%;
+  height: auto;
+}
+
+.aligned {
+  align-items: center;
+}
+
+.justified {
+  justify-content: center;
+}
+
+.hide {
+  display: none;
+}
+
+h2 {
   font-family: "Roboto", sans-serif;
   font-size: 44px;
-}
-h1,
-p {
   margin: 0;
+}
+
+p {
+  line-height: calc(24px * 1.4);
+  font-size: 24px;
+  margin: 0;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  width: 100%;
+}
+
+.main {
+  height: 100%;
+  align-items: center;
+}
+
+.main > .column:nth-child(2) {
+  padding: 64px 140px;
+  width: 66%;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.large {
+  width: 576px;
+  height: 100vh;
+  display: block;
+  overflow: hidden;
+  background-color: #aaa;
+  z-index: 1;
+}
+
+.large > div {
+  height: 100%;
+  display: flex;
+  width: fit-content;
+  transition: translate 0.2s ease;
+}
+
+.container {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container > img {
+  position: absolute;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+
+.content {
+  width: 100%;
+
+  display: flex;
+  flex-flow: column;
+  gap: 48px;
+}
+
+.preview {
+  height: 288px;
+  gap: 16px;
+  transition: translate 200ms ease-in-out;
+  width: fit-content;
+}
+
+.thumbnail {
+  width: 192px;
+  display: block;
+  background-color: #aaa;
+}
+
+.thumbnail > img {
+  height: 100%;
+}
+
+.controls {
+  align-self: end;
+  display: flex;
+  gap: 96px;
+}
+.control {
+  scale: 1.8;
+  margin: 20px 0;
+}
+
+.large .container {
+  width: 576px;
+}
+
+button {
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }

@@ -38,12 +38,11 @@
 
 .paragraph {
   width: 550px;
-  display: flex;
   align-items: center;
 }
-.paragraph > p {
-  margin: 0;
+.paragraph > p > span {
 }
+
 .carousel {
   width: 100%;
   height: 250px;

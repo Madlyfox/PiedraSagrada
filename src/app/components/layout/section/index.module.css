@@ -1,0 +1,14 @@
+.body {
+  padding-inline: var(--ad-section-padding-inline);
+  padding-block: var(--ad-section-padding-block);
+}
+
+.platform {
+  padding-inline: var(--pl-section-padding-inline);
+  padding-block: var(--pl-section-padding-block);
+}
+
+.admin {
+  padding-inline: var(--ad-section-padding-inline);
+  padding-block: var(--ad-section-padding-block);
+}

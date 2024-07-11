@@ -2,10 +2,6 @@ import type { Metadata } from "next";
 import { Inter, Roboto } from "next/font/google";
 import "./styles/global.css";
 import Nav from "./components/layout/navigation/Nav";
-import Bouton from "./components/bouton/Bouton";
-import Info from "./components/info/Info";
-import IconBtn from "./components/iconBtn/IconBtn";
-Nav;
 
 const inter = Inter({ subsets: ["latin"] });
 // const roboto = Roboto({ weight: ["500", "700"] });
@@ -25,10 +21,7 @@ export default function RootLayout({
       {/* <body className={`${inter.className} ${roboto.className}`}>
        */}
       <Nav />
-      {/* <IconBtn /> */}
-      {/* <Bouton text="sign up" href="/" /> */}
-      {/* <Info /> */}
-      {/* <body className={`${inter.className} `}>{children}</body> */}
+      <body className={`${inter.className} `}>{children}</body>
     </html>
   );
 }
