@@ -1,0 +1,50 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  padding: 0 30px;
+}
+.main {
+  justify-content: space-between;
+  border-radius: 16px 16px;
+  box-shadow: 0px 1px 5px var(--neutral-700);
+  padding: 20px 200px;
+}
+.desc {
+  display: flex;
+  flex-flow: column;
+  width: 350px;
+  gap: 20px;
+}
+
+.desc > p {
+  font-weight: 500;
+  font-size: var(--label-medium);
+}
+.lists {
+  display: flex;
+  gap: 130px;
+  flex-flow: row;
+  font-weight: 500;
+  font-size: var(--label-medium);
+}
+.lists > div > ul {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 1650px) {
+  .main {
+    padding: 20px 100px;
+  }
+}
+@media only screen and (max-width: 1450px) {
+  .lists {
+    gap: 50px;
+  }
+}
+@media only screen and (max-width: 1230px) {
+  .main {
+    padding: 20px 50px;
+  }
+}
