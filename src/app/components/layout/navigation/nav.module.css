@@ -1,6 +1,10 @@
 .nav {
+<<<<<<< HEAD
   position: fixed;
   z-index: 2;
+=======
+  position: absolute;
+>>>>>>> e55abed830fd96700a2d8b0ffa7deb3c41fd7b2b
   top: 0;
   left: 0;
   right: 0;
@@ -13,6 +17,7 @@
   display: flex;
   gap: 30px;
 }
+<<<<<<< HEAD
 
 .link > a {
   text-decoration: none;
@@ -31,3 +36,5 @@
 
   font-family: karla, sans-serif;
 }
+=======
+>>>>>>> e55abed830fd96700a2d8b0ffa7deb3c41fd7b2b

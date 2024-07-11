@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 import Details from "@/app/components/pages/details/Details";
 import Display from "@/app/components/display/display";
+=======
+import Details from "@/app/components/details/Details";
+import Nav from "@/app/components/layout/navigation/Nav";
+>>>>>>> e55abed830fd96700a2d8b0ffa7deb3c41fd7b2b
 import React from "react";
+Nav;
 
 export default function page() {
   const data = [
@@ -28,7 +34,12 @@ export default function page() {
 
   return (
     <>
+<<<<<<< HEAD
       <Display items={data} />
+=======
+      {/* <Details /> */}
+      <Nav />
+>>>>>>> e55abed830fd96700a2d8b0ffa7deb3c41fd7b2b
     </>
   );
 }
