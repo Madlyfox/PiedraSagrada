@@ -1,7 +1,7 @@
 import React from "react";
 import Details_module from "./details.module.css";
 import Nav from "../../layout/navigation/Nav";
-import Carousel from "../../carousel/Carousel";
+import Carousel from "../../common/carousel/Carousel";
 
 export default function Details() {
   return (
