@@ -6,14 +6,8 @@ import Image from "next/image";
 Link;
 Image;
 
-function IconBtn({ icon }: { icon: string }) {
-  return (
-    <div className={IconBtn_module.link}>
-      <Link href="/">
-        <span className="material-icons-outlined"> {icon}</span>
-      </Link>
-    </div>
-  );
+function Icon({ icon }: { icon: string }) {
+  return <span className="material-icons-outlined"> {icon}</span>;
 }
 
-export default IconBtn;
+export default Icon;

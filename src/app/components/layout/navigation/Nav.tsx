@@ -1,8 +1,11 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import Nav_module from "./nav.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import IconBtn from "../../common/iconBtn/IconBtn";
+import { allowedNodeEnvironmentFlags } from "process";
+import Icon from "../../common/iconBtn/IconBtn";
 
 export default function Nav() {
   const links = [
@@ -13,51 +16,55 @@ export default function Nav() {
     { href: "#", text: "Contact" },
   ];
 
-  const iconBurger = "start";
-  const iconBtnPosition = "end";
-
   return (
     <div className={Nav_module.nav}>
-      {/* si link est inferieur a 512 alors
-      modifier le menu en burger 
-      sinon rien  */}
       <div className={Nav_module.main}>
-        <div className={Nav_module.iconsBurger}>
-          <IconBtn icon={"deharze"} />
-        </div>
-        {links.map((link: any) =>
-          link.src ? (
-            <Link href={"#"} key={link.text + link.index}>
-              <Image src={link.src} height={50} width={200} alt={link.text} />
+        <div className={Nav_module.iconsMenu}>
+          <Icon icon={"menu"} />
+          <div className={Nav_module.icons}>
+            <Link href={"#"}>
+              <Icon icon={"person_outline"} />
             </Link>
-          ) : (
-            <Link href={"#"} key={link.text + link.index}>
-              <p className={Nav_module.text}>{link.text}</p>
+            <Link href={"#"}>
+              <Icon icon={"shopping_bag"} />
             </Link>
-          )
-        )}
-        <div className={Nav_module.icons}>
-          <IconBtn icon={"person_outline"} />
-          <IconBtn icon={"shopping_bag"} />
+          </div>
         </div>
+
+        <nav className={Nav_module.links}>
+          {links.map((link, index) =>
+            link.src ? (
+              <Link href={link.href} key={link.text + index}>
+                <Image src={link.src} height={50} width={200} alt={link.text} />
+              </Link>
+            ) : (
+              <Link href={link.href} key={link.text + index}>
+                <p className={Nav_module.text}>{link.text}</p>
+              </Link>
+            )
+          )}
+        </nav>
       </div>
-      {/* <div className={Nav_module.main}>
-        {links.map((link: any) =>
-          link.src ? (
-            <Link href={"#"} key={link.text + link.index}>
-              <Image src={link.src} height={50} width={200} alt={link.text} />
-            </Link>
-          ) : (
-            <Link href={"#"} key={link.text + link.index}>
-              <p className={Nav_module.text}>{link.text}</p>
-            </Link>
-          )
-        )}
-        <div className={Nav_module.icons}>
-          <IconBtn icon={"person_outline"} />
-          <IconBtn icon={"shopping_bag"} />
-        </div>
-      </div> */}
     </div>
   );
+}
+
+{
+  /* <div className={Nav_module.main}>
+        {links.map((link: any) =>
+          link.src ? (
+            <Link href={"#"} key={link.text + link.index}>
+              <Image src={link.src} height={50} width={200} alt={link.text} />
+            </Link>
+          ) : (
+            <Link href={"#"} key={link.text + link.index}>
+              <p className={Nav_module.text}>{link.text}</p>
+            </Link>
+          )
+        )}
+        <div className={Nav_module.icons}>
+          <IconBtn icon={"person_outline"} />
+          <IconBtn icon={"shopping_bag"} />
+        </div>
+      </div> */
 }
