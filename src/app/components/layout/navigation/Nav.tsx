@@ -13,6 +13,7 @@ export default function Nav() {
     { href: "#", text: "Contact" },
   ];
 
+  const iconBurger = "start";
   const iconBtnPosition = "end";
 
   return (
@@ -21,6 +22,9 @@ export default function Nav() {
       modifier le menu en burger 
       sinon rien  */}
       <div className={Nav_module.main}>
+        <div className={Nav_module.iconsBurger}>
+          <IconBtn icon={"deharze"} />
+        </div>
         {links.map((link: any) =>
           link.src ? (
             <Link href={"#"} key={link.text + link.index}>
