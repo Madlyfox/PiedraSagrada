@@ -1,0 +1,75 @@
+.main {
+  margin-top: 130px;
+}
+.view {
+  padding: 70px 30px;
+}
+.bottleRender {
+  position: relative;
+}
+.medals {
+  position: absolute;
+  left: 130px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.desc > h1 {
+  font-weight: 400;
+  font-size: var(--display-medium);
+}
+.taste > p {
+  font-weight: 500;
+  font-size: var(--label-large);
+}
+.tags {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.buy {
+  gap: 00px;
+}
+.buy > span {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 8px;
+}
+.form {
+  width: fit-content;
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: var(--neutral-700);
+}
+.details {
+  display: flex;
+  width: 400px;
+  flex-flow: row wrap;
+  column-gap: 150px;
+  row-gap: 30px;
+}
+
+.type {
+  display: flex;
+  flex-flow: column;
+  width: fit-content;
+  height: fit-content;
+  gap: 0;
+}
+.type > p {
+  margin: 0;
+  padding: 0;
+}
+.type > p:nth-child(1) {
+  font-weight: 600;
+}
+.buttons {
+  gap: 15px;
+}

@@ -56,7 +56,7 @@ function Footer() {
   ];
   return (
     <Container className={style.footer}>
-      <Container flex flexDirection="row" className={style.main} aligned>
+      <Container className={style.main} aligned>
         <div className={style.desc}>
           <Image src={"/Logo.svg"} width={200} height={80} alt="Logo" />
           <p>

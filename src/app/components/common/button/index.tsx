@@ -9,6 +9,7 @@ function Button({
   large,
   type,
   tier,
+  submit,
 }: {
   text?: string;
   onClick?: (e: React.UIEvent) => void;
@@ -17,6 +18,7 @@ function Button({
   tier: "primary" | "secondary" | "tertiary";
   type?: "button" | "submit";
   value?: string;
+  submit?: boolean;
 }) {
   return (
     <button

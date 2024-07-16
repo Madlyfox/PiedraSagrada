@@ -1,13 +1,13 @@
 :root {
   /* Font sizes */
 
-  --display-large: 64px;
-  --display-medium: 52px;
-  --display-small: 44px;
+  --display-large: 57px;
+  --display-medium: 45px;
+  --display-small: 36px;
 
-  --heading-large: 40px;
-  --heading-medium: 36px;
-  --heading-small: 32px;
+  --heading-large: 32px;
+  --heading-medium: 28px;
+  --heading-small: 24px;
 
   --title-large: 28px;
   --title-medium: 24px;
@@ -17,9 +17,9 @@
   --label-medium: 16px;
   --label-small: 16px;
 
-  --body-large: 24px;
-  --body-medium: 20px;
-  --body-small: 16px;
+  --body-large: 16px;
+  --body-medium: 14px;
+  --body-small: 12px;
 
   /* Colors */
 
@@ -75,6 +75,7 @@
 
   /* Radius */
 
+  --radius-4: 4px;
   --radius-8: 8px;
   --radius-14: 14px;
   --radius-16: 16px;
