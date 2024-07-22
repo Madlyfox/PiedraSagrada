@@ -7,6 +7,8 @@ import Button from "../../common/button";
 import { RadioInputField } from "../../form/fields/radio";
 import { NumberInputField } from "../../form/fields/number";
 import Image from "next/image";
+import Policy from "../../common/policy";
+import Wrapper from "../../common/wrapper";
 
 export default function Details() {
   const details = [
@@ -92,7 +94,12 @@ export default function Details() {
                   />
                 </Container>
               </form>
+              <Policy />
             </Container>
+            <Wrapper
+              title="Description du millésime"
+              content="Les vignes du Château Margaux sont travaillées avec le plus grand soin, à la main. Les cépages typiques du Médoc sont travaillés avec une majorité de cabernet sauvignon. Les vignes utilisées dans le grand vin sont âgées de 20 ans au minimum. Une équipe de 200 vendangeurs est nécessaire pour assurer la récolte chaque année. "
+            />
           </Container>
         </Container>
       </Container>

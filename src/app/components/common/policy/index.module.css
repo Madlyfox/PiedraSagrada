@@ -1,0 +1,14 @@
+.container {
+  border-radius: var(--radius-8);
+  width: 430px;
+  background-color: var(--white);
+  padding: 24px 32px;
+  box-shadow: 0px 1px 3px var(--neutral-600);
+}
+
+.red {
+  color: var(--primary-400);
+}
+.title {
+  font-weight: 600;
+}
