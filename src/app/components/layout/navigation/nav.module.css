@@ -1,15 +1,13 @@
 .nav {
   position: fixed;
+  top: 0;
+  z-index: 2;
   display: flex;
   justify-content: center;
-  height: 100px;
-  position: absolute;
-  top: 0;
   left: 50%;
   translate: -50%;
   width: 100vw;
   padding: 0 30px;
-  margin: auto;
 }
 .main {
   position: relative;
@@ -19,7 +17,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px 0;
   border-radius: 0 0 12px 12px;
   background-color: var(--white);
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.164);

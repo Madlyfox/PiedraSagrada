@@ -1,7 +1,7 @@
 .title {
   display: flex;
   cursor: pointer;
-  padding: 40px 80px 40px 8px;
+  padding: 20px 80px 20px 8px;
   font-size: var(--heading-small);
   font-weight: 400;
   border-bottom: 1px solid var(--neutral-700);

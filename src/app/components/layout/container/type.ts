@@ -1,11 +1,15 @@
+import { ReactNode, Ref } from "react";
+
 export interface ContainerProps {
-  children?: React.ReactNode;
+  children: ReactNode;
   className?: string;
   flex?: boolean;
-  flexDirection?: "column" | "row";
+  id?: string;
+  flexDirection?: string;
   overflowHidden?: boolean;
   grid?: boolean;
-  hide?: boolean;
   aligned?: boolean;
+  hide?: boolean;
   justified?: boolean;
+  ref?: Ref<HTMLDivElement>; // Add this line to allow ref passing
 }

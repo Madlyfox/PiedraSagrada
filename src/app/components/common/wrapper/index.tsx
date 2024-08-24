@@ -4,7 +4,13 @@ import { Container } from "../../layout/container";
 import "material-icons/iconfont/material-icons.css";
 import style from "./index.module.css";
 
-function Wrapper({ title, content }: { title: string; content: string }) {
+function Wrapper({
+  title,
+  children,
+}: {
+  children: React.ReactNode;
+  title: string;
+}) {
   const [isVisible, setVisibility] = useState(false);
 
   function handleDropdown() {
@@ -18,7 +24,13 @@ function Wrapper({ title, content }: { title: string; content: string }) {
 
         <span className="material-icons">keyboard_arrow_down</span>
       </div>
-      {isVisible == true ? <div className={style.content}>{content}</div> : ""}
+      {isVisible == true ? (
+        <div className={style.content}>
+          <p>{children}</p>
+        </div>
+      ) : (
+        ""
+      )}
     </Container>
   );
 }

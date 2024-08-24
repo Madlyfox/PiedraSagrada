@@ -1,11 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap");
+
 :root {
+  /* Font style */
+
+  --playfair-display: "Playfair Display", serif;
+  --josefin-sans: "Josefin Sans", serif;
+
   /* Font sizes */
 
-  --display-large: 57px;
+  --display-large: 48px;
   --display-medium: 45px;
   --display-small: 36px;
 
-  --heading-large: 32px;
+  --heading-large: 40px;
   --heading-medium: 28px;
   --heading-small: 24px;
 
@@ -13,11 +20,7 @@
   --title-medium: 24px;
   --title-small: 20px;
 
-  --label-large: 20px;
-  --label-medium: 16px;
-  --label-small: 16px;
-
-  --body-large: 16px;
+  --body-large: 22px;
   --body-medium: 14px;
   --body-small: 12px;
 
