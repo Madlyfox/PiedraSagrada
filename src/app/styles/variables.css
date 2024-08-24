@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap");
+
+:root {
+  /* Font style */
+
+  --playfair-display: "Playfair Display", serif;
+  --josefin-sans: "Josefin Sans", serif;
+
+  /* Font sizes */
+
+  --display-large: 48px;
+  --display-medium: 45px;
+  --display-small: 36px;
+
+  --heading-large: 40px;
+  --heading-medium: 28px;
+  --heading-small: 24px;
+
+  --title-large: 28px;
+  --title-medium: 24px;
+  --title-small: 20px;
+
+  --body-large: 22px;
+  --body-medium: 14px;
+  --body-small: 12px;
+
+  /* Colors */
+
+  --black: #05152e;
+  --white: #fcfcfc;
+  --surface: #f5f5f5;
+  --content: #667085;
+
+  --primary-50: #500719;
+  --primary-100: #831832;
+  --primary-200: #9e1638;
+  --primary-300: #bf1743;
+  --primary-400: #dc265a;
+  --primary-500: #ec407a;
+  --primary-600: #f571a1;
+  --primary-700: #f9a8c7;
+  --primary-800: #f2c4f6;
+  --primary-900: #fbcfe1;
+  --primary-950: #fce7f0;
+  --primary-970: #fdf2f6;
+
+  --neutral-50: #262626;
+  --neutral-100: #3d3d3d;
+  --neutral-200: #454545;
+  --neutral-300: #4f4f4f;
+  --neutral-400: #5d5d5d;
+  --neutral-500: #6d6d6d;
+  --neutral-600: #999999;
+  --neutral-700: #b0b0b0;
+  --neutral-800: #d1d1d1;
+  --neutral-900: #e7e7e7;
+  --neutral-950: #fce7f0;
+  --neutral-970: #fdf2f6;
+
+  /* Gaps */
+  --gap-xs: 6px;
+  --gap-s: 8px;
+  --gap-m: 12px;
+  --gap-l: 16px;
+  --gap-base: 32px;
+
+  /* Paddings */
+  --padding-xs: 12px;
+  --padding-5xl: 24px;
+  --padding-base: 16px;
+  --padding-3xs: 10px;
+  --padding-4xs: 9px;
+  --padding-5xs: 8px;
+  --padding-13xl: 32px;
+  --padding-41xl: 60px;
+  --padding-3xl: 22px;
+  --padding-11xs: 2px;
+  --padding-9xs: 4px;
+
+  /* Radius */
+
+  --radius-4: 4px;
+  --radius-8: 8px;
+  --radius-14: 14px;
+  --radius-16: 16px;
+  --radius-18: 18px;
+  --radius-22: 22px;
+
+  /* Radius */
+
+  --btn-large: 200px;
+}

@@ -1,0 +1,20 @@
+.title {
+  display: flex;
+  cursor: pointer;
+  padding: 20px 80px 20px 8px;
+  font-size: var(--heading-small);
+  font-weight: 400;
+  border-bottom: 1px solid var(--neutral-700);
+
+  justify-content: space-between;
+  align-items: center;
+}
+.title > p {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  font-size: var(--body-large);
+  padding: 10px;
+}

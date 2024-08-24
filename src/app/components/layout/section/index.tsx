@@ -7,12 +7,23 @@ const parseSectionClassName = (props: any) => {
   } ${props.type ? Section_module[props.type] : ""}`;
 };
 
+const parseSectionid = (props: any) => {
+  return `${props.id ? props.id : ""}`;
+};
+
 export const Section = (props: {
   className?: string;
   flex?: boolean;
   children?: React.ReactNode;
   type?: "platform" | "admin";
+  id?: string;
 }) => {
   const classNames = parseSectionClassName(props);
-  return <section className={`${classNames}`}>{props.children}</section>;
+  const id = parseSectionid(props);
+
+  return (
+    <section className={`${classNames}`} id={`${id}`}>
+      {props.children}
+    </section>
+  );
 };

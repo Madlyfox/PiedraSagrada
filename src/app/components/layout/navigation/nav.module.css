@@ -1,33 +1,62 @@
 .nav {
   position: fixed;
-  z-index: 2;
   top: 0;
-  left: 0;
-  right: 0;
-  padding: 20px 100px;
+  z-index: 2;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  left: 50%;
+  translate: -50%;
+  width: 100vw;
+  padding: 0 30px;
 }
-.links {
-  display: flex;
+.main {
+  position: relative;
+
   gap: 30px;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 12px 12px;
+  background-color: var(--white);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.164);
+  align-items: flex-end;
 }
 
-.link > a {
+.main > a {
   text-decoration: none;
-  font-size: 18px;
   color: black;
-  font-weight: 700;
-
-  font-family: karla, sans-serif;
 }
 
-.menu > a {
-  text-decoration: none;
-  font-size: 18px;
-  color: black;
-  font-weight: 700;
+.iconBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+  margin-top: -10px;
+}
 
-  font-family: karla, sans-serif;
+.iconBtn-start {
+  order: -1;
+}
+
+.iconBtn-end {
+  order: 1;
+}
+
+.iconBtn-center {
+  order: 0;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+.icons {
+  position: absolute;
+  display: flex;
+  gap: 15px;
+  right: 10px;
+  top: 20px;
+}
+
+@media screen and(max-width: 512px) {
 }

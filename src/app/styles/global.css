@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -14,9 +16,19 @@ body {
 a {
   text-decoration: none;
 }
+p {
+  font-size: 22px;
+  line-height: 27px;
+  font-family: var(--playfair-display);
+  font-size: var(--body-medium);
+}
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+}
 
 body {
   font-family: "Inter", Arial, Helvetica, sans-serif;
+  background-color: var(--surface);
 }
 
 textarea {
@@ -90,17 +102,21 @@ main.pl {
   display: none;
 }
 
+a {
+  color: black;
+}
+
 h2 {
   font-family: "Roboto", sans-serif;
   font-size: 44px;
   margin: 0;
 }
 
-p {
+/* p {
   line-height: calc(24px * 1.4);
   font-size: 24px;
   margin: 0;
-}
+} */
 
 section {
   height: 100vh;

@@ -1,0 +1,14 @@
+.cont {
+  overflow: hidden;
+}
+.test {
+  gap: 500px;
+}
+.test2 {
+  gap: 500px;
+  overflow-x: scroll;
+}
+.holder {
+  overflow: hidden;
+  width: 100vw;
+}

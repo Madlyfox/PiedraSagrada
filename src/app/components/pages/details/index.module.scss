@@ -1,0 +1,113 @@
+/* index.module.scss */
+
+.main {
+  display: flex;
+  margin-top: 100px;
+  height: 100vh;
+}
+
+.view {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.bottleRender {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 100%;
+  position: relative;
+  .img_cont {
+    margin-top: 500px;
+    height: 1100px;
+    width: 603px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.bottleRender::-webkit-scrollbar {
+  display: none;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 70px;
+  padding: 0 120px;
+}
+
+.type {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  p {
+    margin: 0%;
+  }
+}
+
+.info {
+  flex-grow: 1;
+  height: 100%;
+  max-width: 580px;
+  .info_content {
+    padding: 20px;
+    .desc {
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.info::-webkit-scrollbar {
+  display: none;
+}
+
+.info_content {
+  padding: 20px;
+}
+
+.taste {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.buy {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.separator {
+  margin: 20px 0;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}

@@ -1,5 +1,5 @@
 .body {
-  padding-inline: var(--ad-section-padding-inline);
+  padding-inline: 150px;
   padding-block: var(--ad-section-padding-block);
 }
 
