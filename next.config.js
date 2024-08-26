@@ -7,7 +7,7 @@ module.exports = {
     ignoreDuringBuilds: true,
   },
   output: "export",
-  basePath: "/nextjs-github-pages",
+  basePath: "/PiedraSagrada",
 
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
